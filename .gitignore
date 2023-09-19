@@ -3,3 +3,4 @@ ProjectSettings
 Packages
 Logs
 Library
+*.meta
