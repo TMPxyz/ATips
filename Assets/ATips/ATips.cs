@@ -5,7 +5,7 @@ using UnityEngine.Assertions;
 using UnityEngine.UI;
 
 // using TEXT = TMPro.TextMeshProUGUI;
-using TEXT = UnityEngine.UI.Text;
+using TEXT = TMPro.TMP_Text;
 
 namespace MH.UI
 {

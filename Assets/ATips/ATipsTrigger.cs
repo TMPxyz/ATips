@@ -12,8 +12,7 @@ namespace MH.UI
         [SerializeField][Tooltip("if null, use the fallback one")]
         private ATips _target;
         [SerializeField][Multiline]
-        private string _content = "";
-        public string content => _content;
+        public string content = "";
         #pragma warning restore 0649
 
         void Awake()
@@ -24,14 +23,14 @@ namespace MH.UI
         void Update()
         {
             ATips tip = _target ? _target : ATips.fallback;
-            tip.ShowTips(_content);
+            tip.ShowTips(content);
         }
 
         public void StartTips()
         {
             enabled = true;
             ATips tip = _target ? _target : ATips.fallback;
-            tip.ShowTips(_content);
+            tip.ShowTips(content);
         }
 
         public void EndTips()
@@ -40,5 +39,6 @@ namespace MH.UI
             ATips tip = _target ? _target : ATips.fallback;
             tip.HideTips();
         }
+
     }
 }
